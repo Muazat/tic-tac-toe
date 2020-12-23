@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic tac Toe</title>
+    <link rel="stylesheet" text="text/css" href="game.css">
+</head>
+<body >
+
+<header> 
+<!-- this is where to start the game and choose game type
+if possible by clicking this should pop up a selection area (number of players, number of ,oves or time and dark mode)-->
+<div class="Play">
+        <button class="topbtn" onmouseover="chang()">Menu</button> 
+        <div id="pop">
+                <div id="gametype">
+                        <button onclick="start()">Start Game</button>
+                        <button onclick="light()">Light mode</button>
+                </div>
+                <div id="theme"> <button onclick="dark()">Ghost mode </button></div>
+        </div>
+        
+</div>
+ 
+<!-- this indicates a player's turn-->
+<div class="next">  <span id="ply"><button  class="topbtn" id="plyr">PLAYER</button> </span> </div>
+
+<!-- this keeps track of the playing time-->
+<div class="time"> <button  class="topbtn" onclick="start()">Reset</button> </div>
+</header>
+
+
+<!-- this is the board-->
+
+<section class="board" onmouseover="change()">
+                <p id="nply"></p>
+        <div class="x1">
+                <div id="p1" data-number="0" onclick="put(event)">X</div>
+                <div id="p2" data-number="1" onclick="put(event)">O</div>
+                <div id="p3" data-number="2" onclick="put(event)">X</div>
+        </div>
+        
+        <div class="x1">
+                <div id="p4" data-number="3" onclick="put(event)">X</div>
+                <div id="p5" data-number="4" onclick="put(event)">X</div>
+                <div id="p6" data-number="5" onclick="put(event)">O</div>
+        </div>
+
+        <div class="x1">
+                <div id="p7" data-number="6" onclick="put(event)">O</div>
+                <div id="p8" data-number="7" onclick="put(event)">O</div>
+                <div id="p9" data-number="8" onclick="put(event)">X</div>
+        </div>
+</section>
+
+
+<!-- this shows the number of wins-->
+<section class="record"></section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

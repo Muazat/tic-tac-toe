@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+ background-color: rgba(255, 255, 255, 0.836);
+}
+header{
+    display: flex;
+}
+header .topbtn{
+    text-align: center;
+    margin: 15px 170px;
+    font-weight: bolder;
+    height: 40px;
+    width: 110px;
+    font-size:20px;
+    border-radius: 10px;
+    color: aliceblue;
+    background: rgb(63, 62, 62);
+    border: 2px white dotted;
+}
+header .topbtn:hover{
+    margin: 14px 165px;
+    height: 40px;
+    width: 110px;
+    font-size:23px;
+    border-radius: 10px;
+    background-color: rgb(84, 153, 214);
+    color: rgb(63, 62, 62);
+    border: 2px white dotted;
+    
+}
+#ply{
+    background-color: rgb(142, 199, 142);
+    border-radius: 40px;
+    border: 2px rgb(189, 250, 189) dotted;
+}
+
+.board{
+    margin:0 15%;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 5px  rgb(63, 62, 62) double;
+    background-color: rgb(202, 245, 202);
+    
+ 
+}
+.board:hover{
+    border: 5px rgb(255, 0, 76) double;
+    background-color: rgb(228, 245, 228);
+}
+ .x1{
+    display: flex;
+    margin:  3px 27%;
+}
+
+.x1 div{
+padding: 60px;
+background-color:rgb(142, 199, 142);
+margin:  3px;
+border: 5px rgb(189, 250, 189) dotted;
+border-radius: 5px;
+font-size: 25px;
+}
+#p1,#p5,#p9{
+    background-color:  rgb(63, 62, 62) ;
+    color: rgb(202, 245, 202);
+}
+#pop{
+    position: absolute;
+    cursor: pointer;
+    background-color:rgb(63, 62, 62);
+    margin: 5px 150px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    z-index: 1;
+   visibility:hidden;
+
+    
+
+}
+#pop button{
+    display: block;
+    padding: 6px;
+    margin: 10px;
+    background-color:rgb(202, 245, 202);
+    color:rgb(63, 62, 62 );
+    border-radius: 5px;
+    font-weight: bolder;
+}
+#pop button:hover{
+    padding: 5px;
+    background-color:rgb(84, 153, 214);
+    color:rgb(202, 245, 202);
+}
+#nply{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    
+}
