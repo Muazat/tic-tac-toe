@@ -3,7 +3,7 @@ var place= [0,0,0,0,0,0,0,0,0];
 var winner;
 var bb;
 var keep;
-// selection menu-----------------------------------------------
+// selection menu--------------------------------------------------
 function chang(){
         document.getElementById("pop").style.visibility="visible";
         document.getElementsByClassName("board")[0].style.opacity="0.4";        
